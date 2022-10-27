@@ -50,11 +50,7 @@ let changeWatched = (title) => {
     console.log("changing the status of the movie...");
     for (let i = 0; i < allMovies.length; i++) {
         if (allMovies[i].title == title) {
-            if (allMovies[i].haveWatched == true) {
-                allMovies[i].haveWatched = false;
-            } else {
-                allMovies[i].haveWatched = true;
-            }
+            allMovies[i].haveWatched = true;
         }
     }
 }
